@@ -39,26 +39,26 @@
 //     Console.WriteLine(point);
 // }
 
-// //3 (Шаг 3)
-// int[] grades = { 4, 5, 3, 5, 4, 2 };
+//3
+int[] grades = { 4, 5, 3, 5, 4, 2 };
 
-// for (int i = 0; i < grades.Length - 1; i++)
-// {
-//     for (int j = 0; j < grades.Length - 1 - i; j++)
-//     {
-//         if (grades[j] < grades[j + 1])
-//         {
-//             int temp = grades[j];
-//             grades[j] = grades[j + 1];
-//             grades[j + 1] = temp;
-//         }
-//     }
-// }
+for (int i = 0; i < grades.Length - 1; i++)
+{
+    for (int j = 0; j < grades.Length - 1 - i; j++)
+    {
+        if (grades[j] < grades[j + 1])
+        {
+            int temp = grades[j];
+            grades[j] = grades[j + 1];
+            grades[j + 1] = temp;
+        }
+    }
+}
 
-// foreach (int grade in grades)
-// {
-//     Console.WriteLine(grade);
-// }
+foreach (int grade in grades)
+{
+    Console.WriteLine(grade);
+}
 
 // //4
 // int[] GenerateScheduleSlots(int lessonsCount)
@@ -178,22 +178,22 @@
 
 // Console.WriteLine($"Сумма всех чисел: {sum1}");
 
-//Вариант 6
-int[] arr6 = { 9, 2, 7, 4, 1, 8, 5 }; 
+// //Вариант 6
+// int[] arr6 = { 9, 2, 7, 4, 1, 8, 5 }; 
 
-for (int i = 0; i < arr6.Length - 1; i++)
-{
-    for (int j = 0; j < arr6.Length - 1 - i; j++)
-    {
-        if (arr6[j] > arr6[j + 1])
-        {
-            int temp = arr6[j];
-            arr6[j] = arr6[j + 1];
-            arr6[j + 1] = temp;
-        }
-    }
-}
+// for (int i = 0; i < arr6.Length - 1; i++)
+// {
+//     for (int j = 0; j < arr6.Length - 1 - i; j++)
+//     {
+//         if (arr6[j] > arr6[j + 1])
+//         {
+//             int temp = arr6[j];
+//             arr6[j] = arr6[j + 1];
+//             arr6[j + 1] = temp;
+//         }
+//     }
+// }
 
-int medianIndex = arr6.Length / 2;
-Console.WriteLine($"Отсортированный массив: {string.Join(", ", arr6)}");
-Console.WriteLine($"Медиана (средний элемент): {arr6[medianIndex]}");
+// int medianIndex = arr6.Length / 2;
+// Console.WriteLine($"Отсортированный массив: {string.Join(", ", arr6)}");
+// Console.WriteLine($"Медиана (средний элемент): {arr6[medianIndex]}");
